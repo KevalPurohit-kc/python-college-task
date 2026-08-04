@@ -1,0 +1,10 @@
+t = (50,140,10,52,10)
+g = ("AB","NM","HG","YU")
+print("length is:",len(t))
+print("max number is :",max(t))
+print("min number is :",min(t))
+print("marge 2 tuple:",t + g)
+print("tuple index value is: ",t[2])
+print(g[-3:-1])
+print("index number print: ",t.index(140))
+
