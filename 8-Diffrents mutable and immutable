@@ -1,0 +1,13 @@
+lis = ['raj','keval','rahul']
+#mutable
+lis += ['Mehul']
+print(lis)
+tup = (50,10,52,60)
+print(tup)
+#immutable not add value 
+# tup +=(100)
+# print(tup)
+lis.remove('keval')
+print(lis)
+del lis[0]
+print(lis)
