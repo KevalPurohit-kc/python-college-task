@@ -18,3 +18,5 @@ last_item=dic.clear()
 print(dic)
 #delete dictionary 
 del dic
+dic2 = {'name':'keval'}
+print(type(dic2))
