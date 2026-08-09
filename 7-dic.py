@@ -13,7 +13,8 @@ last_item=dic.pop('age')
 
 
 
-
+#only dictionary inside date clear empty dic show 
 last_item=dic.clear()
 print(dic)
-
+#delete dictionary 
+del dic
