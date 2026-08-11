@@ -3,11 +3,8 @@ def fun():
 def fun1(x,y,name):
     print(x)
     print(y, name)
-def fun3(*name):
-    print(*name);
+def fun3(age,*name):
+    print(age,*name);
 fun1(12,60,"keval")
 fun()
-fun3("Raj","Rohan")
-
-
-
+fun3(25,"Raj","Rohan")
