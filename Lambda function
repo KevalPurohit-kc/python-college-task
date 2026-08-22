@@ -1,0 +1,5 @@
+nam = [12,54,62,48,721,845,20]
+new = list(filter(lambda x: x < 800,sorted(nam)))
+mapp = list(map(lambda x:x * 2,nam))
+print(new)
+print(mapp)
