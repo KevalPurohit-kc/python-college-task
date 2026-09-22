@@ -9,7 +9,7 @@ print(my_list)
 my_dict = {x: x**2 for x in numbers}
 print(my_dict) 
 
-# Extracts unique numbers (drops the duplicate 2)
+# Extracts unique numbers
 duplicate_numbers = [1, 2, 2, 3]
 my_set = {x for x in duplicate_numbers}
 print(my_set)  
