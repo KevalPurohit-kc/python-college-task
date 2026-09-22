@@ -1,0 +1,15 @@
+# The base data
+numbers = [1, 2, 3]
+
+# Doubles each number
+my_list = [x * 2 for x in numbers]
+print(my_list)  # Output: [2, 4, 6]
+
+# Maps a number to its square
+my_dict = {x: x**2 for x in numbers}
+print(my_dict)  # Output: {1: 1, 2: 4, 3: 9}
+
+# Extracts unique numbers (drops the duplicate 2)
+duplicate_numbers = [1, 2, 2, 3]
+my_set = {x for x in duplicate_numbers}
+print(my_set)   # Output: {1, 2, 3}
