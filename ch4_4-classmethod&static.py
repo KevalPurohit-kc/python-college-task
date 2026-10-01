@@ -9,3 +9,5 @@ class Files:
 obj = Files()
 obj.display("Files")
 obj.static("static")
+#static method call directly class name 
+Files.static("static using class to access")
