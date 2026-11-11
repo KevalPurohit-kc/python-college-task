@@ -1,0 +1,19 @@
+# Import a module and access its members using the module name.
+import math
+print("Square root using import math:", math.sqrt(25))
+
+# Import a module with an alias.
+import math as m
+print("Pi using import math as m:", m.pi)
+
+# Import a specific member from a module.
+from math import factorial
+print("Factorial using from math import factorial:", factorial(5))
+
+# Import a specific member with an alias.
+from math import pow as power
+print("Power using from math import pow as power:", power(2, 3))
+
+# Import all public members from a module.
+from math import *
+print("Ceiling using from math import *:", ceil(4.2))
