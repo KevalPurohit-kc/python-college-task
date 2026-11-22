@@ -1,0 +1,22 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="mca2b",
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM customers")
+print("fetchone():", mycursor.fetchone())
+
+mycursor.execute("SELECT * FROM customers")
+print("fetchmany(2):", mycursor.fetchmany(2))
+
+mycursor.execute("SELECT * FROM customers")
+print("fetchall():", mycursor.fetchall())
+
+mycursor.close()
+mydb.close()
