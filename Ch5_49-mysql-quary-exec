@@ -1,0 +1,33 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="mca2b",
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute(
+    "CREATE TABLE IF NOT EXISTS customers "
+    "(name VARCHAR(20), city VARCHAR(20))"
+)
+print("TABLE CREATED")
+
+sql = "INSERT INTO customers (name, city) VALUES (%s, %s)"
+values = [
+    ("Asha", "Surat"),
+    ("Ravi", "Rajkot"),
+    ("Mina", "Ahmedabad"),
+]
+mycursor.executemany(sql, values)
+mydb.commit()
+print("RECORDS INSERTED")
+
+mycursor.execute("SELECT * FROM customers")
+
+
+
+mycursor.close()
+mydb.close()
